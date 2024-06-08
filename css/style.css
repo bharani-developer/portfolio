@@ -1,0 +1,2567 @@
+/*
+
+
+	Name: bharani - Personal Portfolio HTML5
+
+
+/*
+=================================================================
+CSS TABLE OF INDEX
+=================================================================
+1. bharani Main Menu Area Css
+2. bharani Slider Area Css
+3. bharani Breatcome Area Css
+4. bharani About Area Css
+5. bharani Service Area Css
+6. bharani Section Title
+7. bharani Counter Area  Css
+8. bharani Portfolio Area  Css
+9. bharani Skill Area  Css
+9. bharani Team Area  Css
+10. bharani Testimonial Area  Css
+11. bharani Like Us Area  Css
+12. bharani Story Area  Css
+13. bharani Pricing Area  Css
+15. bharani Blog Area  Css
+16. bharani Address Area Css
+17. bharani Contact Area Css
+18. bharani Google Map Area Css
+19. bharani Footer Area Css
+20. bharani Blog Details Area Css
+21. bharani Bounce Animate Css
+
+=================================================================
+END CSS TABLE OF INDEX
+================================================================= */
+/* heart */
+
+.shiny-3d-heart {
+	color: red;
+	font-size: 1em; /* Adjust size as needed */
+	text-shadow: 0px 0px 10px rgba(110, 7, 7, 0.5);
+	display: inline-block;
+}
+
+/*==========================
+ bharani	Main Menu Area Css
+============================*/
+
+.nav-container {
+	margin: 0 auto;
+	max-width: 1300px;
+}
+.bharani_nav_manu {
+	background: rgba(0, 0, 0, 0.4);
+	padding: 36px 0;
+}
+.headroom--pinned {
+	transform: translateY(0);
+}
+.headroom--unpinned {
+	transform: translateY(-100%);
+}
+.header--fixed {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+	left: 0;
+	top: 0;
+	transition: transform 0.25s ease-in-out;
+	will-change: transform;
+	z-index: 999999;
+}
+.menu-height-space {
+	height: 100px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logo_img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.name,
+.designation {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	line-height: 0.2;
+}
+.name {
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+.designation {
+	color: #757575;
+	text-transform: uppercase;
+}
+.name:before {
+	content: '\003C';
+	font-size: 50px;
+}
+
+.name:after {
+	content: '\003E';
+	font-size: 50px;
+}
+
+.designation:before {
+	content: '\007B';
+	font-size: 25px;
+	font-weight: 25px;
+}
+
+.designation:after {
+	content: '\007D';
+	font-size: 25px;
+	font-weight: 25px;
+}
+.name:before,
+.name:after,
+.designation:before,
+.designation:after {
+	margin: 0 5px; /* Adjust the spacing as needed */
+}
+/* bharani Menu Css*/
+.bharani_menu {
+	text-align: right;
+}
+.bharani_menu ul {
+	list-style: none;
+	position: relative;
+}
+.bharani_menu li {
+	display: inline-block;
+}
+.bharani_menu li a {
+	margin: 0 10px;
+	font-size: 17px;
+	font-weight: 400;
+	display: block;
+	color: #eaeaea;
+	position: relative;
+}
+.bharani_menu li:last-child a {
+	margin-right: 0;
+}
+.bharani_menu li a:before {
+	position: absolute;
+	left: 0;
+	top: 33px;
+	content: '';
+	height: 2px;
+	width: 0%;
+	background: #fff;
+	transition: 0.5s;
+}
+.bharani_menu li a:hover:before {
+	width: 101%;
+}
+
+.mean-container {
+	overflow: hidden;
+}
+/* Styles for the "previous" and "next" navigation links */
+.slider_nav {
+	position: absolute;
+	bottom: 50px; /* Adjust the distance from the bottom */
+	right: 0; /* Align to the right */
+	z-index: 9999; /* Ensure the links appear above other content */
+}
+
+.slider_nav a {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	transition: background-color 0.3s, color 0.3s;
+	margin: 0 10px;
+}
+
+.slider_nav a:hover {
+	background-color: #0056b3;
+}
+
+.slider_nav .prev {
+	margin-right: 10px;
+}
+
+.slider_nav .next {
+	margin-left: 10px;
+}
+.nav-link.prev {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px;
+	border: 2px solid #007bff;
+	border-radius: 5px;
+	text-decoration: none;
+	border-color: #6c757d;
+}
+.nav-link.next {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px;
+	border: 2px solid #007bff;
+	border-radius: 5px;
+	text-decoration: none;
+	border-color: #007bff;
+}
+
+/*==========================
+	bharani Slider Area Css
+===========================*/
+/* CSS styles for the profile badge */
+.badge-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.slider_area {
+	background-image: url(../assets/images/webpage/slider-1.webp);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 900px;
+}
+.slider_area.home2 {
+	background-image: url(../assets/images/webpage/slider-2.webp);
+}
+.single_slider {
+	position: relative;
+}
+.slider_content {
+	display: table;
+	height: 850px;
+	width: 100%;
+}
+.slider_text {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.slider_text_inner {
+	display: inline-block;
+}
+.slider_text_inner h1 {
+	overflow: hidden;
+	display: inline-block;
+}
+.cd-headline.clip span {
+	padding: 0 !important;
+}
+.cd-headline.clip span b {
+	display: inline-block;
+	font-weight: 600;
+}
+.slider_text_inner p {
+	width: 70%;
+	font-size: 16px;
+	padding: 29px 0 22px;
+}
+
+.slider_thumb {
+	position: relative;
+}
+.slider_thumb_main {
+	position: absolute;
+	bottom: 300px;
+	right: -20px;
+}
+.slider_icon {
+	text-align: left; /* Align content to left */
+}
+
+.slider_icon ul {
+	list-style: none;
+	padding: 0; /* Remove default padding */
+	margin: 0; /* Remove default margin */
+}
+
+.slider_icon ul li {
+	display: inline-block;
+	margin: 0 7px; /* Add margin for spacing */
+}
+
+.slider_icon ul li a {
+	background: #135ef3;
+	height: 50px;
+	width: 50px;
+	font-size: 25px;
+	display: inline-block;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center; /* Align icon center */
+	text-decoration: none; /* Remove underline */
+	transition: 0.5s;
+}
+
+.slider_icon ul li a:hover {
+	background: #fff !important;
+	color: #135ef3 !important;
+}
+
+.custom-button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	border: 2px solid #135ef3;
+	border-radius: 0;
+	background-color: #135ef3;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.custom-button:hover {
+	background-color: #fff !important;
+	color: #135ef3 !important;
+	border-radius: 0 !important;
+}
+
+.slider_content_text {
+	margin-top: 19px;
+}
+#element {
+	display: inline-block;
+	text-align: left;
+	white-space: pre-wrap;
+	min-height: 1em;
+}
+@media (max-width: 600px) {
+	#element {
+		display: block;
+		min-height: 2em;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.ctn-preloader .animation-preloader .txt-loading {
+		font-size: 3em;
+	}
+}
+
+.slider_icon button.custom-button {
+	display: inline-block;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	position: relative;
+	transition: 0.5s;
+	z-index: 1;
+	overflow: hidden;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+}
+.slider_icon button.custom-button:hover {
+	color: #135ef3;
+}
+.slider_icon button.custom-button:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background: #fff;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+}
+.slider_icon button.custom-button:hover:before {
+	width: 180%;
+}
+/* Styles for the "Download CV" link */
+.slider_icon a.custom-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.slider_icon a.custom-button:hover {
+	background: #135ef3;
+}
+
+.slider_icon a.custom-button:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	transition: width 0.3s ease;
+}
+
+.slider_icon a.custom-button:hover:before {
+	width: 100%;
+}
+
+.slider_icon a.custom-button {
+	width: auto;
+	height: auto;
+	line-height: 1;
+}
+/*=============================
+	bharani Breatcome Area Css
+===============================*/
+.breatcome_area {
+	padding: 185px 0 105px;
+	background: #141b25;
+}
+.breatcome_title {
+	text-align: center;
+}
+.breatcome_content {
+	padding-top: 7px;
+}
+.breatcome_content ul {
+	list-style: none;
+}
+.breatcome_content ul li {
+	font-size: 20px;
+}
+.breatcome_content ul li a {
+	display: inline-block;
+	color: #fff;
+}
+
+/*===========================
+	bharani About Area Css
+=============================*/
+
+.about_area {
+	padding: 80px 0 120px;
+}
+.single_about {
+	margin-bottom: 30px;
+	z-index: 1;
+	position: relative;
+}
+
+.single_about_thumb_inner {
+	overflow: hidden;
+}
+.single_about_content {
+	margin-left: 60px;
+}
+.single_about_content_inner_title h3 {
+	font-size: 24px;
+	padding-top: 26px;
+}
+.single_about_text {
+	padding-bottom: 13px;
+}
+.single_about_content_inner_text {
+	padding: 26px 0 23px;
+}
+.single_about_button a {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+	padding: 11px 26px;
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.single_about_button a:hover {
+	color: #135ef3;
+}
+.single_about_button a:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background: #fff;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+}
+.single_about_button a:hover:before {
+	width: 180%;
+}
+.single_about_shap {
+	position: absolute;
+	right: -53px;
+	bottom: -55px;
+	z-index: -1;
+}
+
+/*bharani About Area Home2*/
+.about_area.home2 {
+	padding: 80px 0 80px;
+}
+.home2 .thumb_img_border {
+	position: absolute;
+	left: 18px;
+	top: 56px;
+	bottom: -8px;
+	right: 30px;
+	border: 10px solid #135ef3;
+	z-index: -1;
+}
+.home2 .single_about_thumb {
+	margin-left: 55px;
+}
+.home2 .single_about_thumb::before {
+	left: 22px;
+	position: absolute;
+	content: '';
+	right: 0;
+	bottom: 0%;
+	height: 72px;
+	width: 390px;
+	background: #135ef3;
+	z-index: -1;
+}
+.home2 .single_about_content_inner_text {
+	padding-top: 9px;
+	padding-bottom: 7px;
+}
+.single_about_skill {
+	margin-bottom: 34px;
+}
+.single_about_skill p b {
+	display: inline-block;
+	width: 170px;
+	font-weight: 400;
+}
+.single_about_skill p span {
+	width: 170px;
+}
+.single_about_icon {
+	margin-top: 22px;
+	padding-top: 6px;
+}
+.single_about_button {
+	float: left;
+	margin-right: 30px;
+}
+.single_about_icon a {
+	font-size: 20px;
+	display: inline-block;
+	color: #fff;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	height: 36px;
+	width: 36px;
+	text-align: center;
+	line-height: 36px;
+	margin: 0 3px;
+	position: relative;
+	transition: 0.5s;
+	z-index: 1;
+	overflow: hidden;
+}
+.single_about_icon a:hover {
+	color: #135ef3;
+}
+.single_about_icon a:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -50%;
+	width: 0%;
+	background: #fff;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+}
+.single_about_icon a:hover:before {
+	width: 198%;
+}
+/* About Pages */
+.team_area.about_page {
+	background: #0d1218;
+	padding: 92px 0 110px;
+}
+
+/*===========================
+	bharani Service Area Css
+=============================*/
+
+.softskill_area {
+	background: #141b25;
+	padding: 105px 40px 33px;
+}
+.single_softskill_section_inner h2 {
+	margin-bottom: 27px;
+}
+.single_softskill_content {
+	background: #0d1218;
+	padding: 26px 28px 13px;
+	position: relative;
+	margin-bottom: 30px;
+	transition: 0.5s;
+}
+.single_softskill_content::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 7px;
+	width: 0;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	transition: 0.5s;
+}
+.single_softskill_content_icon {
+	padding-bottom: 9px;
+}
+.single_softskill_content_inner_title {
+	padding-bottom: 13px;
+}
+.single_softskill_content:hover::before {
+	width: 100%;
+}
+.single_softskill_content_icon img {
+	width: inherit !important;
+}
+.softskill_list .owl-nav {
+	position: relative;
+	margin-left: 600px;
+	top: 20px;
+}
+.softskill_list .owl-next {
+	display: inline-block;
+	margin-left: 14px;
+	font-size: 24px;
+	transition: 0.5s;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	height: 45px;
+	width: 45px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+}
+.softskill_list .owl-prev {
+	display: inline-block;
+	font-size: 24px;
+	margin-right: 14px;
+	transition: 0.5s;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	height: 45px;
+	width: 45px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+}
+.softskill_list .owl-prev:hover {
+	color: #135ef3;
+	background: #fff;
+}
+.softskill_list .owl-next:hover {
+	color: #135ef3;
+	background: #fff;
+}
+.softskill_heading {
+	display: inline-block;
+	width: 450px;
+}
+
+/*=======================
+	bharani Section Title
+=========================*/
+.section_title {
+	text-align: center;
+	margin-bottom: 35px;
+}
+.section_title h4 {
+	font-size: 23px;
+	text-transform: capitalize;
+}
+.section_title h2 {
+	font-weight: 700;
+}
+
+/*============================
+	bharani Counter Area  Css
+==============================*/
+.counter_area {
+	background: #141b25;
+	padding: 132px 0 120px;
+}
+.single_counter_content_inner {
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+}
+.single_counter_icon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 90px;
+}
+.style_two .single_counter_icon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 96px;
+}
+.counter_text h1 {
+	font-size: 32px;
+}
+
+/*=============================
+	bharani Portfolio Area  Css
+===============================*/
+
+.portfolio_area {
+	padding: 92px 0 103px;
+}
+/* Portfolio Nav */
+.portfolio_nav {
+	margin-bottom: 50px;
+}
+.portfolio_menu ul {
+	text-align: center;
+	list-style: none;
+}
+.portfolio_menu ul li {
+	display: inline-block;
+	margin: 0 14px;
+	cursor: pointer;
+}
+.portfolio_menu ul li a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	transition: 0.5s;
+}
+.portfolio_menu ul li a:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 24px;
+	height: 2px;
+	width: 0%;
+	background: #fff;
+	transition: 0.5s;
+}
+
+/* Single Portfolio */
+.single_portfolio {
+	overflow: hidden;
+	margin-bottom: 30px;
+	position: relative;
+	transition: 0.5s;
+}
+.single_portfolio_thumb {
+	transform: scale(1.01);
+	transition: 0.5s;
+}
+.single_portfolio_thumb::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50%;
+	width: 70%;
+	content: '';
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	opacity: 0;
+	transition: 0.5s;
+	border: 3px solid #fff;
+	transform: translateY(-50%) translateX(-50%);
+}
+.single_portfolio_content {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	transition: 0.5s;
+	z-index: 99999;
+	width: 100%;
+	transform: translateX(-50%) translate(50%);
+	opacity: 0;
+}
+.single_portfolio_icon {
+	text-align: center;
+	padding-bottom: 10px;
+}
+.single_portfolio_content_inner {
+	text-align: center;
+}
+.single_portfolio_content_inner h2 {
+	font-size: 22px;
+}
+.single_portfolio_content_inner h2 a {
+	display: inline-block;
+	overflow: hidden;
+	font-weight: 600;
+	color: #fff;
+}
+.single_portfolio_icon i {
+	background: #135ef3;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	border-radius: 5px;
+	color: #fff;
+	transition: 0.5s;
+}
+.loade_more {
+	margin-top: 50px;
+	text-align: center;
+}
+.loade_more a {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+	padding: 11px 26px;
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 5px;
+}
+.loade_more a:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background: #fff;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+}
+/* Portfolio Hover */
+.single_portfolio:hover .single_portfolio_thumb {
+	transform: scale(1.2);
+}
+.portfolio_menu ul li a:hover:before {
+	width: 100%;
+}
+.single_portfolio:hover .single_portfolio_content {
+	opacity: 1;
+	top: 32%;
+}
+.single_portfolio:hover .single_portfolio_thumb::before {
+	opacity: 1;
+}
+.single_portfolio_icon i:hover {
+	background: #fff;
+	color: #135ef3;
+}
+.loade_more a:hover {
+	color: #135ef3;
+}
+.loade_more a:hover:before {
+	width: 180%;
+}
+
+/*---------- Portfolio css Start -------*/
+.prt_portfolio_wrapper {
+	background-color: #010101;
+	position: absolute;
+	right: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+	display: none;
+	padding: 80px 0px 0px;
+}
+.prt_loadmore {
+	display: none;
+}
+.prt_portfolio_box {
+	display: inline-block;
+	width: 100%;
+}
+.prt_portfolio_box a {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.prt_portfolio_img {
+	display: inline-block;
+	width: auto;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_img:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_img:hover:after {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_img img {
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_img:hover img {
+	display: inline-block;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_img:hover .prt_portfolio_text {
+	bottom: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_text {
+	position: absolute;
+	bottom: -111px;
+	left: 0px;
+	width: 100%;
+	text-align: left;
+	padding: 30px;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.prt_portfolio_text h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-top: 0px;
+}
+.prt_portfolio_text p {
+	margin: 0px;
+	text-transform: capitalize;
+	color: #000000;
+}
+.flutter-container {
+  height: 300px; /* Set a fixed height for the container */
+  position: relative; /* Ensure proper positioning for child elements */
+}
+
+.flutter-container img {
+  height: 100%; /* Set the height of the image to 70% of its parent container's height */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper rendering as a block-level element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/*==========================
+	bharani Skill Area  Css
+============================*/
+.single-line-header {
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the font bold */
+    color: #fff; /* Set text color to white for contrast */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Add some margin */
+    padding: 20px; /* Add some padding */
+    line-height: 1.2; /* Adjust the line height */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(13, 129, 246, 0.5); /* Shadow with transparent blue tint */
+    opacity: 0; /* Initially hide the element */
+    animation-name: slideInFromLeft; /* Specify animation name */
+    animation-duration: 1s; /* Specify animation duration */
+    animation-fill-mode: forwards; /* Retain the final state of animation */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.skill_area {
+	background-image: url(../assets/images/webpage/skill.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 700px;
+}
+.skill_area .section_title.left {
+	text-align: left;
+	margin-top: 104px;
+}
+.skill_section {
+	background: rgba(19, 94, 243, 0.51);
+	padding: 49px 50px 35px;
+}
+.skill-wrapper h5 {
+	font-size: 18px;
+	margin-bottom: 19px;
+}
+.skill_area .progress {
+	margin-bottom: 29px;
+	height: 20px;
+	border-radius: 30px;
+}
+.skill_area .progress-bar.one {
+	background: #fa0e5c;
+}
+.skill_area .progress-bar.two {
+	background: #7137ff;
+}
+.skill_area .progress-bar.three {
+	background: #33b6ff;
+}
+.skill_area .progress-bar.four {
+	background: #c347f1;
+}
+.skill_area .progress-bar.five {
+	background: #a4b81b;
+}
+.icon-style {
+	padding: 10px !important;
+	margin: 10px !important;
+}
+/* Simplify the frame effect */
+.swiper-full-mobile:before {
+	display: none; /* Remove the frame effect */
+}
+
+/* Stylish navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+	color: #ffffff; /* Arrow color */
+	font-size: 24px; /* Arrow size */
+	background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+	border-radius: 50%; /* Circular arrows */
+	padding: 10px; /* Add padding for better clickability */
+}
+
+/* Improve pagination */
+.swiper-pagination {
+	bottom: 20px; /* Adjust pagination position */
+}
+
+.swiper-pagination-bullet {
+	width: 10px; /* Set bullet width */
+	height: 10px; /* Set bullet height */
+	background-color: rgba(255, 255, 255, 0.5); /* Bullet color with transparency */
+	border-radius: 50%; /* Circular bullets */
+	margin: 0 5px; /* Add margin between bullets */
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #ffffff; /* Active bullet color */
+}
+
+/* Apply smooth transitions */
+.swiper-slide {
+	transition: transform 0.5s ease; /* Smooth slide transition */
+}
+
+/* Adjust image sizing */
+.swiper-full-mobile .swiper-slide img {
+	width: 100%; /* Ensure images/webpage cover the entire slide */
+	height: 100%;
+	object-fit: cover; /* Maintain aspect ratio */
+}
+.swiper-pagination-bullet {
+	margin: 0 15px !important;
+}
+.our_skill {
+    font-size: 2.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the font bold */
+    color: #fff; /* Set text color to white for contrast */
+    text-align: left; /* Align text to the left */
+    margin: 20px; /* Add margin on all sides */
+    padding: 20px; /* Add some padding */
+    line-height: 1.2; /* Adjust the line height */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(13, 129, 246, 0.5); /* Shadow with blue tint */
+    animation-name: slideInFromLeft;
+    animation-duration: 1s;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+/*==========================
+	 Skill Area  Css
+============================*/
+.skill_area {
+	background: #141b25;
+}
+.skill_area .section_title.left {
+	text-align: left;
+	margin-top: 50px;
+}
+.skill_section {
+	background: #0d1218;
+	padding: 49px 50px 35px;
+}
+.skill-wrapper h5 {
+	font-size: 18px;
+	margin-bottom: 19px;
+}
+.skill_area .progress {
+	margin-bottom: 29px;
+	height: 20px;
+	border-radius: 30px;
+}
+.progress-bar.one {
+	background: #e34c26;
+}
+.progress-bar.two {
+	background: #f0db4f;
+}
+.progress-bar.three {
+	background: #8312fa;
+}
+.progress-bar.four {
+	background: #61dbfb;
+}
+.progress-bar.five {
+	background: #196bac;
+}
+
+.progress-bar.six {
+	background: #3fb6d3;
+}
+.progress-bar.seven {
+	background: #7278aa;
+}
+.progress-bar.eight {
+	background: #fb503b;
+}
+.progress-bar.nine {
+	background: #00758f;
+}
+.progress-bar.ten {
+	background: #3c873a;
+}
+.progress-bar.eleven {
+	background: #68a063;
+}
+.progress-bar.twelve {
+	background: #00ed64;
+}
+
+.icon-title {
+	font-size: 4rem;
+}
+/*=========================
+	bharani Team Area  Css
+===========================*/
+.team_area {
+	background: #141b25;
+	padding: 92px 0 248px;
+	position: relative;
+}
+.team_area .row.team {
+	position: absolute;
+	top: 200px;
+	margin: auto;
+}
+.single_team {
+	position: relative;
+	margin-top: 30px;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.single_team_icon ul {
+	list-style: none;
+}
+.single_team_icon ul li {
+	margin: 4px 0;
+}
+.single_team_icon {
+	position: absolute;
+	right: 20px;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	padding: 15px 13px;
+	border-radius: 0 0 30px 30px;
+	top: -50px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.active .single_team_icon {
+	opacity: 1;
+	top: 0;
+	transition: 0.5s;
+}
+.active .single_team_content {
+	opacity: 1;
+	left: 0;
+	transition: 0.5s;
+}
+.single_team_icon ul li a {
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+}
+.single_team_content {
+	bottom: 23px;
+	position: absolute;
+	left: -50px;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	padding: 0 62px 0 13px;
+	border-radius: 0 40px 40px 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+.single_team_content h4 {
+	font-size: 20px;
+	margin-top: 8px;
+}
+.single_team_content p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.single_team:hover .single_team_content {
+	left: 0;
+	opacity: 1;
+}
+.single_team:hover .single_team_icon {
+	top: 0;
+	opacity: 1;
+}
+/*=================================
+	bharani Testimonial Area  Css
+===================================*/
+.testimonial_area {
+	padding: 250px 0 110px;
+}
+.single_testimonial {
+	background: #141b25;
+	padding: 40px 30px 38px;
+}
+.single_testimonial_thumb {
+	float: left;
+	margin-right: 25px;
+}
+.single_testimonial_content_text {
+	padding-bottom: 26px;
+}
+.single_testimonial_content_title h4 {
+	margin-top: 4px;
+}
+.single_testimonial_icon i {
+	color: #135ef3;
+	margin: 0 3px;
+	font-size: 20px;
+}
+.single_testimonial_icon {
+	float: right;
+	margin-top: -48px;
+}
+/*===========================
+	bharani Like Us Area  Css
+=============================*/
+.like_us_area {
+	background: #141b25;
+	padding: 167px 0 110px;
+}
+.single_like_us_button a {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+	padding: 11px 26px;
+	font-size: 18px;
+	font-weight: 500;
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.single_like_us_button a:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background: #fff;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+}
+.single_like_us_content_text {
+	padding: 16px 0 20px;
+}
+.single_like_us_thumb {
+	position: relative;
+	margin-top: -59px;
+}
+.single_like_us_button a:hover {
+	color: #135ef3;
+}
+.single_like_us_button a:hover:before {
+	width: 180%;
+}
+
+/*===========================
+	bharani Story Area  Css
+=============================*/
+.story_area {
+	padding: 95px 0 75px;
+}
+.story_area .section_title {
+	padding-bottom: 16px;
+}
+.single_story_tmiline {
+	position: relative;
+}
+.single_story_tmiline::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	height: 89%;
+	width: 1px;
+	background: #135ef3;
+	left: -12px;
+	margin: auto;
+}
+.single_story {
+	margin-bottom: 30px;
+}
+.single_story_content_date span {
+	font-size: 18px;
+}
+.single_story_content_inner {
+	position: relative;
+}
+/* Single Story Left */
+.single_story_content_left {
+	text-align: right;
+	margin-right: 47px;
+	margin-top: 220px;
+}
+.single_story_content_left.two {
+	padding-top: 150px;
+}
+.single_story_content_icon_left {
+	position: absolute;
+	top: 5px;
+	right: -102px;
+	z-index: 1;
+}
+.single_story_content_icon_left::before {
+	position: absolute;
+	content: '';
+	right: 30px;
+	top: 95px;
+	height: 12px;
+	width: 12px;
+	background: #135ef3;
+	border-radius: 50%;
+}
+.single_story_content_icon_left::after {
+	position: absolute;
+	content: '';
+	right: 32.5px;
+	top: 135px;
+	height: 8px;
+	width: 8px;
+	background: #135ef3;
+	border-radius: 50%;
+}
+.two .single_story_content_icon_left::before {
+	right: 23px;
+}
+.two .single_story_content_icon_left {
+	right: -95px;
+}
+.two .single_story_content_icon_left::after {
+	right: 25.5px;
+}
+.single_story_content_left .single_story_content_inner_text {
+	width: 81%;
+	float: right;
+	padding-top: 18px;
+}
+.single_story_content_left .single_story_content_icon::before {
+	content: '';
+	position: absolute;
+	right: -157px;
+	top: 62%;
+	height: 90px;
+	width: 90px;
+	background: rgba(255, 255, 255, 0.8);
+	z-index: -1;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	animation: pulse-border 1500ms ease-out infinite;
+}
+.single_story_content_left.two .single_story_content_icon::before {
+	right: -157px;
+	top: 54%;
+}
+/* Single Story Right */
+.single_story_content_right {
+	margin-left: 47px;
+}
+.single_story_content_right.two {
+	margin-top: 279px;
+}
+.single_story_content_icon_right {
+	position: absolute;
+	left: -88px;
+	top: 0;
+}
+.single_story_content_icon_right::before {
+	position: absolute;
+	content: '';
+	left: 23px;
+	top: 80px;
+	height: 12px;
+	width: 12px;
+	background: #135ef3;
+	border-radius: 50%;
+}
+.single_story_content_icon_right::after {
+	position: absolute;
+	content: '';
+	left: 25.5px;
+	top: 122px;
+	height: 8px;
+	width: 8px;
+	background: #135ef3;
+	border-radius: 50%;
+}
+.single_story_content_icon_right.last::before {
+	display: none;
+}
+.single_story_content_icon_right.last::after {
+	display: none;
+}
+.single_story_content_right .single_story_content_inner_text {
+	width: 81%;
+	padding-top: 18px;
+}
+.single_story_content_right .single_story_content_icon::before {
+	content: '';
+	position: absolute;
+	left: -59px;
+	top: 19%;
+	height: 90px;
+	width: 90px;
+	background: rgba(255, 255, 255, 0.8);
+	z-index: -1;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	animation: pulse-border 1500ms ease-out infinite;
+}
+
+@keyframes pulse-border {
+	0% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+/*============================
+	bharani Pricing Area  Css
+==============================*/
+.company_area {
+	background: #141b25;
+	padding: 92px 0 75px;
+}
+.single_company {
+	background: #0d1218;
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+	padding: 0 0 32px;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.company_head {
+	position: relative;
+	background-image: url(../assets/images/webpage/pricing.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 184px;
+	transition: 0.5s;
+}
+.active .company_head {
+	background-image: url(../assets/images/webpage/pricing2.webp);
+	transition: 0.5s;
+}
+.company_title {
+	position: absolute;
+	left: 0;
+	top: 16px;
+	right: 0;
+}
+.company_title h2 {
+	font-size: 40px;
+	font-weight: 600;
+}
+.company_tk {
+	position: absolute;
+	left: 0;
+	top: 15%;
+	right: 0;
+}
+.company_tk h2 {
+	background: #222c3f;
+	height: 130px;
+	width: 130px;
+	text-align: center;
+	margin: auto;
+	line-height: 125px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+	font-size: 35px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.active .company_tk h2 {
+	background: #135ef3;
+}
+.pricing_body {
+	margin-top: 80px;
+}
+.pricing_body .featur ul li {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.company_button {
+	margin-top: 33px;
+}
+.order_now a {
+	background: #222c3f;
+	color: #fff;
+	padding: 10px 30px 11px;
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 30px;
+	display: inline-block;
+}
+.active .order_now a {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+}
+.order_now a:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+	transition: 0.5s;
+}
+.single_company:hover .company_head {
+	background-image: url(../assets/images/webpage/pricing2.webp);
+}
+.active.single_company:hover .company_head {
+	background-image: url(../assets/images/webpage/pricing.webp);
+}
+.single_company:hover .order_now a:before {
+	width: 180%;
+}
+.single_company:hover .company_tk h2 {
+	background: #135ef3;
+}
+.active.single_company:hover .company_tk h2 {
+	background: #222c3f;
+}
+.active.single_company:hover .order_now a:before {
+	background: #222c3f;
+}
+/*=========================
+	bharani Blog Area  Css
+===========================*/
+.blog_area {
+	padding: 92px 0 46px;
+}
+.single_social {
+	margin-bottom: 62px;
+}
+.blog_area .section_title {
+	margin-bottom: 85px;
+}
+.single_social_thumb {
+	position: relative;
+}
+.thumb_img_border {
+	position: absolute;
+	left: -31px;
+	top: -33px;
+	bottom: 24px;
+	right: 113px;
+	border: 10px solid #135ef3;
+	z-index: -1;
+}
+.thumb_img_border.right {
+	right: -31px;
+	left: 75px;
+}
+.single_social_content_inner {
+	margin-top: 60px;
+}
+.single_social_content_title a {
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+}
+.meta_box {
+	padding: 9px 0 0;
+}
+.meta_box span {
+	margin-left: 60px;
+}
+.single_social_button {
+	margin-top: 32px;
+}
+.single_social_button a {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+	padding: 12px 50px;
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 20px;
+	display: inline-block;
+}
+.single_social_button.active a {
+	border: 2px solid #135ef3;
+	background: transparent;
+}
+.single_social_button a:hover {
+	color: #135ef3;
+}
+.single_social_button a:before {
+	position: absolute;
+	content: '';
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background: #fff;
+	transform: skew(50deg);
+	transition-duration: 0.6s;
+	z-index: -1;
+	transition: 0.5s;
+}
+.single_social_button.active a:before {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+}
+.single_social_button.active a {
+	color: #fff;
+}
+.single_social_button a:hover:before {
+	width: 180%;
+}
+
+/*==========================
+	bharani Address Area Css
+============================*/
+.contact_address_area {
+	background: #141b25;
+}
+.single_address {
+	text-align: center;
+	padding: 54px 50px 55px;
+	transition: 0.5s;
+	border: 1px solid #141b25;
+	margin-bottom: 1px;
+}
+.single_address:hover {
+	border: 1px solid #fff;
+}
+.single_address_content_inner {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50px;
+}
+.single_address_content_inner h3 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.single_address_content_inner p {
+	margin: 0;
+}
+.single_address:hover {
+	border: 1px solid #fff;
+}
+/*===========================
+	bharani Contact Area Css
+=============================*/
+.contact_form_area {
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	right: 0;
+	width: 100%;
+	margin: auto;
+	padding: 100px;
+}
+.contact_form_area::before {
+	position: absolute;
+	left: 0;
+	top: 11px;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: rgba(0, 0, 0, 0.6);
+}
+.contact_title {
+	margin-bottom: 73px;
+	position: relative;
+}
+.contact_title::before {
+	position: absolute;
+	left: 0;
+	top: 63px;
+	height: 2px;
+	width: 110px;
+	background: #fff;
+	content: '';
+	margin: auto;
+	right: 0;
+}
+.contact_title::after {
+	position: absolute;
+	left: 0;
+	top: 74px;
+	height: 2px;
+	width: 80px;
+	background: #135ef3;
+	content: '';
+	margin: auto;
+	right: 0;
+}
+.contact_title h2 {
+	text-align: center;
+}
+.from_field {
+	width: 100%;
+}
+.from_field_inner {
+	width: 50%;
+	float: left;
+}
+.text_area .from_field_inner {
+	width: 100%;
+}
+.text_area .from_field_inner textarea {
+	width: 98%;
+	color: #fff;
+	background: transparent;
+	height: 300px;
+	padding-left: 15px;
+	border: 1px solid #fff;
+	padding-top: 15px;
+}
+.from_field_inner input {
+	color: #fff;
+	font-size: 16px;
+	height: 50px;
+	margin-bottom: 30px;
+	padding-left: 15px;
+	background: transparent;
+	border: 1px solid #fff;
+	width: 96%;
+}
+.reques_button input {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+	padding: 10px 30px 11px;
+	font-size: 15px;
+	font-weight: 600;
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 30px;
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+	margin-top: 34px;
+}
+
+/*==============================
+	bharani Google Map Area Css
+================================*/
+.google_map_area {
+	position: relative;
+	height: 856px !important;
+}
+.map iframe {
+	width: 100%;
+	height: 872px !important;
+	border: 0;
+}
+
+/*==========================
+	bharani Footer Area Css
+============================*/
+.footer_area {
+	padding: 80px 0 53px;
+}
+.single_footer_icon ul {
+	list-style: none;
+	text-align: center;
+}
+.single_footer_icon ul li {
+	margin: 0 7px;
+	display: inline-block;
+}
+.single_footer_icon ul li a {
+	background: #fff;
+	height: 50px;
+	width: 50px;
+	font-size: 25px;
+	display: inline-block;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #135ef3;
+	transition: 0.5s;
+}
+.single_footer_content_text {
+	text-align: center;
+	margin-top: 19px;
+}
+.single_footer_content_text p {
+	font-size: 21px;
+}
+.single_footer_icon ul li a:hover {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+}
+
+/*============================
+bharani Blog Details Area Css
+==============================*/
+.blog-details-area {
+	background: #fff;
+	padding: 110px 0 110px;
+}
+/* Blog Left Sidebar CSS */
+.blog_area.left-sidebar {
+	background: #fff;
+	padding: 108px 0 80px;
+}
+.left-sidebar .bharani-single-blog {
+	box-shadow: 0 7px 16px rgba(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+}
+.left-sidebar .bharani-blog-thumb {
+	overflow: hidden;
+}
+.left-sidebar .em-blog-content-area {
+	padding: 0 30px 20px;
+}
+.left-sidebar .blog-page-title {
+	padding-top: 4px;
+}
+.left-sidebar .blog-page-title h2 {
+	font-size: 30px;
+}
+.blog-page-datetime {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	text-align: center;
+	width: 16%;
+	padding: 15px 0 18px;
+	border-radius: 10px;
+	position: relative;
+	margin-top: -50px;
+}
+.blog-page-datetime span {
+	font-size: 20px;
+}
+.left-sidebar .blog-page-title a {
+	color: #0d1218;
+	font-weight: 600;
+}
+.blog-page-content-text p {
+	color: #0d1218;
+}
+.left-sidebar .bharani-blog-meta-left {
+	padding: 13px 0 16px;
+}
+.left-sidebar.blog2 .blog-page-datetime {
+	width: 40%;
+	padding: 21px 0 24px;
+}
+.left-sidebar.blog2 .blog-page-title h2 {
+	font-size: 22px;
+}
+.left-sidebar.blog2 .em-blog-content-area {
+	padding: 0 22px 15px;
+}
+.left-sidebar.blog2 .bharani-blog-meta-left span {
+	margin-right: 15px;
+}
+.left-sidebar.blog2 .bharani-blog-meta-left i {
+	margin-right: 6px;
+}
+.left-sidebar.blog2 .blog-page-title {
+	padding-top: 12px;
+}
+.left-sidebar.blog2 .bharani-blog-thumb img {
+	width: 100%;
+}
+/* Blog Details  Content CSS */
+.blog_details {
+	box-shadow: 0 7px 16px rgba(0, 0, 0, 0.15);
+	padding: 15px 20px;
+}
+.blog_dtl_thumb img {
+	width: 100%;
+}
+.blog_dtl_content h2 {
+	color: #0d1218;
+	font-size: 35px;
+	padding-top: 25px;
+}
+.bharani-blog-meta-left {
+	padding: 12px 0 35px;
+}
+.bharani-blog-meta-left span {
+	color: #0d1218;
+	margin-right: 40px;
+}
+.bharani-blog-meta-left i {
+	margin-right: 10px;
+}
+.blog_dtl_content p {
+	color: #0d1218;
+}
+.blog_dtl_content h3 {
+	color: #0d1218;
+	padding: 10px 0 20px;
+	font-size: 28px;
+}
+.blog_details blockquote {
+	margin: 37px 0 36px;
+	font-size: 14px;
+	border-left: 7px solid #135ef3;
+	background: #141b25;
+	font-style: italic;
+	font-weight: 500;
+	padding: 25px 35px 15px;
+}
+.signatures {
+	text-align: right;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 15px;
+}
+.signatures span {
+	color: #fff;
+}
+/* POST REPLY CSS */
+.blog_comments_section {
+	padding: 20px 15px 18px;
+	margin: 50px 0 0;
+	box-shadow: 0 7px 16px rgba(0, 0, 0, 0.15);
+}
+.comments_ttl > h3 {
+	font-size: 28px;
+	color: #0d1218;
+}
+.comments_ttl {
+	margin-bottom: 37px;
+}
+.commentst_content p {
+	color: #0d1218;
+}
+.comments_thumb {
+	float: left;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.commentst_content {
+	overflow: hidden;
+}
+.blog_comments_section .post_meta {
+	margin-bottom: 6px;
+}
+.blog_comments_section .post_meta span {
+	font-weight: 400;
+	padding-right: 15px;
+	color: #6d6d6d;
+}
+.blog_comments_section .post_meta span:hover {
+	color: #03a9f4;
+}
+.blog_comments_section .post_meta span:last-child:before {
+	display: none;
+}
+.commentst_meta_reply {
+	float: right;
+}
+.commentst_meta_reply i {
+	margin-right: 10px;
+}
+.commentst_meta_reply:hover {
+	color: #03a9f4;
+}
+.single_commentst_inner {
+	margin-bottom: 44px;
+	margin-top: 46px;
+	padding-left: 63px;
+}
+.badmin i {
+	margin-right: 3px;
+}
+
+/* COMMENT FORM CSS */
+.blog_reply {
+	overflow: hidden;
+	margin-top: 50px;
+	padding: 20px 15px 37px;
+	box-shadow: 0 7px 16px rgba(0, 0, 0, 0.15);
+}
+.reply_ttl > h3 {
+	font-size: 28px;
+	color: #0d1218;
+}
+.reply_ttl {
+	margin-bottom: 36px;
+}
+.blog_reply .em_contact_form {
+	margin-bottom: 0;
+}
+.blog_reply .contact_bnt button:hover {
+	background: #0d2352;
+	color: #fff;
+}
+/* contact title css */
+.request_form_title h2 {
+	color: rgba(221, 221, 221, 0.79);
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 47px 0 7px;
+}
+.request_form_title h1 {
+	color: rgba(255, 255, 255, 1);
+	font-size: 35px;
+	font-weight: 700;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* bharani Form Css */
+.blog_reply .form_field {
+	width: 100%;
+}
+.blog_reply .form_field_inner {
+	width: 50%;
+	float: left;
+}
+.blog_reply .form_field_inner input,
+.blog_reply .form_field_inner textarea {
+	width: 95%;
+	background: #1e2735;
+	border: 0;
+	height: 50px;
+	padding-left: 15px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.blog_reply .text_area .form_field_inner {
+	width: 100%;
+}
+.blog_reply .text_area .form_field_inner textarea {
+	width: 97.5%;
+	height: 150px;
+	padding-top: 15px;
+}
+.blog_reply .contact_button button {
+	background: #1e2735;
+	border: 0;
+	color: #fff;
+	padding: 12px 25px;
+	cursor: pointer;
+}
+.paginations {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 28px;
+}
+.page-numbers li {
+	display: inline-block;
+}
+.paginations a,
+.page-numbers span.current {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	margin: auto 5px;
+	border: 1px solid #ddd;
+	color: #888;
+}
+.paginations a:hover,
+.paginations a.current,
+.page-numbers span.current {
+	background: linear-gradient(to right, #03b8fa, #135ef3);
+	border-color: linear-gradient(to right, #03b8fa, #135ef3);
+	color: #fff;
+}
+
+/* Shape Image  */
+.single_slider_shape {
+	position: relative;
+}
+.single_slider_shape_thumb {
+	position: absolute;
+	right: 50px;
+	left: 50px;
+	top: 360px;
+	opacity: 0.3;
+}
+.sinlge_about_shape_thumb {
+	position: absolute;
+	left: -385px;
+	top: -70px;
+}
+.single_story_shape {
+	position: relative;
+}
+.single_story_shape_inner {
+	position: absolute;
+	left: -330px;
+	opacity: 0.3;
+	top: -100px;
+}
+.single_story_shape_inner2 {
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 270px;
+}
+.single_story_shape_inner3 {
+	position: absolute;
+	right: -310px;
+	-webkit-animation: rotate3d 4s linear infinite;
+	animation: rotate3d 4s linear infinite;
+	opacity: 0.3;
+	top: -100px;
+}
+.single_about_shape {
+	position: relative;
+}
+.single_about_shape_thumb1 {
+	position: absolute;
+	left: -270px;
+	top: -130px;
+}
+.single_about_shape_thumb {
+	position: absolute;
+	right: 100px;
+	bottom: 66px;
+	z-index: -1;
+}
+.single_about_shape_thumb2 {
+	position: absolute;
+	left: -250px;
+	top: 100px;
+	right: 95%;
+	z-index: -1;
+}
+.single_about_shape_thumb_right1 {
+	position: absolute;
+	right: -394px;
+	bottom: 83px;
+}
+.single_about_shape_thumb_right2 {
+	position: absolute;
+	right: -339px;
+	bottom: 425px;
+}
+.single_softskill_shape_thumb img:nth-child(1) {
+	z-index: 3;
+	top: -130px;
+	left: -45px;
+}
+.single_softskill_shape_thumb {
+	position: absolute;
+	left: -460px;
+	-webkit-animation: rotate3d 4s linear infinite;
+	animation: rotate3d 4s linear infinite;
+	opacity: 0.4;
+	bottom: 350px;
+}
+.single_softskill_shape_thumb.two {
+	position: absolute;
+	right: 0;
+	top: 265px;
+}
+.single_story_shape_inner4 {
+	position: absolute;
+	left: -385px;
+	top: 230px;
+}
+.single_story_shape_inner5 {
+	position: absolute;
+	right: -300px;
+	top: 660px;
+	z-index: -1;
+}
+.single_story_shape_inner6 img:nth-child(1) {
+	z-index: 3;
+	top: -130px;
+	left: -45px;
+}
+.single_story_shape_inner6 {
+	position: absolute;
+	right: -385px;
+	-webkit-animation: rotate3d 4s linear infinite;
+	animation: rotate3d 4s linear infinite;
+	opacity: 0.4;
+	bottom: 102px;
+}
+/*============================
+bharani Bounce Animate Css
+==============================*/
+/* bounce-animate */
+.bounce-animate {
+	animation-name: float-bob;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-moz-animation-name: float-bob;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: float-bob;
+	-ms-animation-duration: 2s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	-o-animation-name: float-bob;
+	-o-animation-duration: 2s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: linear;
+}
+
+@-webkit-keyframes float-bob {
+	0% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+	50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+}
+
+@-webkit-keyframes movebounce {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@keyframes movebounce {
+	0% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+	50% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}
+	100% {
+		-webkit-transform: translateY(0px);
+		transform: translateY(0px);
+	}
+}
+
+@-webkit-keyframes moveleftbounce {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	50% {
+		-webkit-transform: translateX(20px);
+		transform: translateX(20px);
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+@keyframes moveleftbounce {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+	50% {
+		-webkit-transform: translateX(20px);
+		transform: translateX(20px);
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+.rotateme {
+	-webkit-animation-name: rotateme;
+	animation-name: rotateme;
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+@keyframes rotateme {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotateme {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate3d {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	100% {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes rotate3d {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	100% {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes animationFramesOne {
+	0% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+	20% {
+		-webkit-transform: translate(73px, -1px) rotate(36deg);
+		transform: translate(73px, -1px) rotate(36deg);
+	}
+	40% {
+		-webkit-transform: translate(141px, 72px) rotate(72deg);
+		transform: translate(141px, 72px) rotate(72deg);
+	}
+	60% {
+		-webkit-transform: translate(83px, 122px) rotate(108deg);
+		transform: translate(83px, 122px) rotate(108deg);
+	}
+	80% {
+		-webkit-transform: translate(-40px, 72px) rotate(144deg);
+		transform: translate(-40px, 72px) rotate(144deg);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+}
+
+@-webkit-keyframes animationFramesOne {
+	0% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+	20% {
+		-webkit-transform: translate(73px, -1px) rotate(36deg);
+	}
+	40% {
+		-webkit-transform: translate(141px, 72px) rotate(72deg);
+	}
+	60% {
+		-webkit-transform: translate(83px, 122px) rotate(108deg);
+	}
+	80% {
+		-webkit-transform: translate(-40px, 72px) rotate(144deg);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px) rotate(0deg);
+	}
+}
+/* Add your custom CSS for cookie consent banner styling */
+.cookie-consent {
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+#acceptCookies {
+	background-color: #1263f3;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.highlight {
+	color: #1263f3 !important;
+}
+/* Define the animation */
+@keyframes slideBottomToTop {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Apply the animation to the content */
+.slide-up {
+	animation: slideBottomToTop 2s ease-in-out;
+}
+
+/* Define the animation */
+@keyframes slideTopToBottom {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Apply the animation to the content */
+.slide-down {
+	animation: slideTopToBottom 2s ease-in-out;
+}
+
+.gframe {
+	display: none;
+	visibility: hidden;
+}

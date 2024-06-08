@@ -1,0 +1,854 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 991px) and (max-width: 1920px) {
+	.hidden-lg {
+		display: none !important;
+	}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.single_about_content_inner_title h3 {
+		padding-top: 0 !important;
+		margin-top: 0 !important;
+	}
+	.softskill_list .owl-nav {
+		margin-left: 0 !important;
+		top: 0 !important;
+	}
+	.single_story_content_right .single_story_content_icon::before {
+		top: 16% !important;
+	}
+	.home2 .thumb_img_border {
+		left: -13px !important;
+		right: -16px !important;
+	}
+	.counter_title h4 {
+		font-size: 20px !important;
+	}
+	.style_two .single_counter_icon {
+		top: 92px !important;
+	}
+	.recent-post-text a {
+		font-size: 13px !important;
+	}
+	.recent-post-text span {
+		font-size: 13px;
+	}
+	.textwidget {
+		padding: 0 0 325px !important;
+	}
+	.sbi_photo_wrap {
+		margin: 5px !important;
+	}
+	.blog-page-datetime {
+		width: 20% !important;
+	}
+	.single_like_us_thumb img {
+		width: 100%;
+	}
+	.single_like_us_thumb {
+		margin-top: -45px !important;
+	}
+	.thumb_img_border.right {
+		right: -32px !important;
+		left: 25px !important;
+	}
+	.thumb_img_border {
+		right: 25px !important;
+	}
+	.softskill_area {
+		padding: 108px 0 104px !important;
+	}
+	.single_portfolio_thumb img {
+		width: 100%;
+	}
+	.single_team_thumb img {
+		width: 100%;
+	}
+	.left-sidebar .blog-page-title h2 {
+		font-size: 29px !important;
+	}
+	.left-sidebar.blog2 .blog-page-datetime {
+		width: 43% !important;
+	}
+	.left-sidebar.blog2 .blog-page-title h2 {
+		font-size: 23px !important;
+	}
+	.left-sidebar.blog2 .bharani-blog-meta-left i {
+		margin-right: 2px !important;
+	}
+	.left-sidebar.blog2 .bharani-blog-meta-left span {
+		margin-right: 6px !important;
+		font-size: 15px;
+	}
+	.bharani_menu li a {
+		margin: 0 14px !important;
+		font-size: 16px !important;
+	}
+	.slider_content {
+		height: 840px !important;
+	}
+	.single_portfolio_content_inner h2 {
+		font-size: 20px !important;
+	}
+	.single_portfolio_thumb::before {
+		height: 60% !important;
+		width: 75% !important;
+	}
+	.single_portfolio:hover .single_portfolio_content {
+		top: 29% !important;
+	}
+	.contact_form_area::before {
+		top: 11px !important;
+	}
+	.home2 .single_about_thumb::before {
+		left: -8px !important;
+	}
+	.counter_area {
+		padding: 135px 0 120px !important;
+	}
+	.testimonial_area {
+		padding: 175px 0 110px !important;
+	}
+	.home2 .contact_form_area::before {
+		top: 11px !important;
+	}
+	.single_softskill_section_inner h2 {
+		font-size: 39px !important;
+	}
+	.about_area {
+		padding: 80px 0 110px !important;
+	}
+	.like_us_area {
+		padding: 152px 0 110px !important;
+	}
+	.about_area.home2 {
+		padding: 80px 0 80px !important;
+	}
+	.about_area.home2.about {
+		padding: 90px 0 80px !important;
+	}
+	.about .contact_form_area::before {
+		top: 10px !important;
+	}
+	.slider_thumb_main {
+		right: -110px !important;
+	}
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.slider_content_text_inner h1 {
+		font-size: 45px;
+	}
+	.left-sidebar.blog2 .bharani-blog-meta-left span {
+		font-size: 16px;
+	}
+	.left-sidebar.blog2 .blog-page-title a {
+		font-size: 20px !important;
+	}
+	.left-sidebar.blog2 .blog-page-datetime {
+		width: 38% !important;
+	}
+	.single_about_thumb_inner img {
+		width: 100%;
+	}
+	.single_about_content {
+		margin-left: 0 !important;
+	}
+	.single_softskill_section_inner h2 {
+		font-size: 28px;
+	}
+	.single_softskill_section_inner p {
+		font-size: 14px;
+	}
+	.single_softskill_content_inner_text p {
+		font-size: 14px;
+	}
+	.single_softskill_content_inner_title h4 {
+		font-size: 22px;
+	}
+	.softskill_list .owl-nav {
+		margin-left: 0 !important;
+		top: 0 !important;
+	}
+	.single_portfolio_thumb img {
+		width: 100%;
+	}
+	.single_story_content_right .single_story_content_inner_text {
+		width: 100% !important;
+	}
+	.single_story_content_left .single_story_content_inner_text {
+		width: 100% !important;
+	}
+	.single_story_content_inner_text p {
+		font-size: 15px;
+	}
+	.single_story_content_right .single_story_content_icon::before {
+		top: 16% !important;
+	}
+	.single_social_thumb_inner img {
+		width: 100%;
+	}
+	.single_social_content_inner {
+		margin-top: -28px !important;
+	}
+	.single_social {
+		margin-bottom: 70px !important;
+	}
+	.meta_box span {
+		margin-left: 35px !important;
+	}
+	.home2 .thumb_img_border {
+		right: -5px !important;
+		left: 5px !important;
+	}
+	.home2 .single_about_thumb::before {
+		left: 11px !important;
+		height: 125px !important;
+		width: 677px !important;
+	}
+	.home2 .single_about_thumb {
+		margin-left: 0 !important;
+	}
+	.counter_title h4 {
+		font-size: 16px !important;
+	}
+	.style_two .single_counter_icon {
+		top: 90px !important;
+	}
+	.single_testimonial_icon {
+		display: none;
+	}
+	.team_area .row.team {
+		position: relative !important;
+		top: 0 !important;
+	}
+	.team_area {
+		padding: 92px 0 106px !important;
+	}
+	.testimonial_area {
+		padding: 95px 0 107px !important;
+	}
+	.single_like_us_content_title h2 {
+		font-size: 36px;
+	}
+	.recent-post-text a {
+		font-size: 13px !important;
+	}
+	.recent-post-image {
+		margin-right: 7px !important;
+	}
+	.recent-post-text span {
+		font-size: 13px;
+	}
+	.blog_dtl_content h2 {
+		font-size: 24px !important;
+	}
+	.bharani-blog-meta-left span {
+		margin-right: 10px !important;
+		font-size: 12px;
+	}
+	.bharani-blog-meta-left {
+		padding: 12px 0 24px !important;
+	}
+	.blog_dtl_content h3 {
+		padding: 5px 0 14px !important;
+		font-size: 22px !important;
+	}
+	.comments_ttl > h3 {
+		font-size: 22px !important;
+	}
+	.reply_ttl > h3 {
+		font-size: 22px !important;
+	}
+	.blog-left-side .widget h2 {
+		font-size: 22px !important;
+		margin-bottom: 5px !important;
+	}
+	.textwidget {
+		padding: 0 0 329px !important;
+	}
+	.sbi_photo_wrap {
+		margin: 5px !important;
+	}
+	.blog-page-datetime {
+		width: 32% !important;
+		padding: 17px 0 20px !important;
+	}
+	.left-sidebar .blog-page-title a {
+		font-size: 26px !important;
+	}
+	.left-sidebar .bharani-blog-meta-left span {
+		margin-right: 7px !important;
+	}
+	.single_like_us_thumb img {
+		width: 100%;
+	}
+	.single_like_us_thumb {
+		margin-top: 26px !important;
+	}
+	.thumb_img_border {
+		right: 25px !important;
+	}
+	.thumb_img_border.right {
+		right: -32px !important;
+	}
+	.single_team_thumb img {
+		width: 100%;
+	}
+	.hidden-sm {
+		display: none !important;
+	}
+	.slider_content {
+		height: 735px !important;
+	}
+	.slider_text_inner h1 {
+		font-size: 50px;
+	}
+	.breatcome_area {
+		padding: 124px 0 135px !important;
+	}
+	.single_portfolio:hover .single_portfolio_content {
+		opacity: 1;
+		top: 35% !important;
+	}
+	.softskill_area {
+		padding: 105px 40px 105px !important;
+	}
+	.contact_form_area::before {
+		top: 11px !important;
+	}
+	.counter_area {
+		padding: 141px 0 123px !important;
+	}
+	.like_us_area {
+		padding: 90px 0 101px !important;
+	}
+	.about_area.home2 {
+		padding: 70px 0 74px !important;
+	}
+	.section_title h4 {
+		font-size: 18px !important;
+	}
+	.about_area {
+		padding: 80px 0 100px !important;
+	}
+	.about_area.home2.about {
+		padding: 90px 0 74px !important;
+	}
+	.blog_area {
+		padding: 92px 0 35px !important;
+	}
+	.slider_thumb_main {
+		display: none !important;
+	}
+}
+
+/* Large Mobile :600px. */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	.slider_content_text_inner h1 {
+		font-size: 38px;
+	}
+	.slider_content_text_inner p {
+		width: 72% !important;
+	}
+	.single_about_thumb_inner img {
+		width: 100%;
+	}
+	.single_about_content {
+		margin-left: 0 !important;
+	}
+	.single_softskill_section_inner {
+		margin-bottom: 40px;
+	}
+	.about_area.home2.about {
+		padding: 90px 0 75px !important;
+	}
+	.about .contact_form_area::before {
+		top: 9px !important;
+	}
+	.softskill_list .owl-nav {
+		margin-left: 0 !important;
+		top: 0 !important;
+		text-align: center;
+	}
+	.softskill_area {
+		padding: 90px 0 106px !important;
+	}
+	.single_portfolio_thumb img {
+		width: 100%;
+	}
+	.skill_area {
+		height: 974px !important;
+	}
+	.single_story_content_inner_text {
+		display: none;
+	}
+	.single_story_content_right .single_story_content_icon::before {
+		top: 31% !important;
+		height: 80px !important;
+		width: 80px !important;
+	}
+	.single_story_content_left .single_story_content_icon::before {
+		right: -145px !important;
+		top: 43% !important;
+		height: 80px !important;
+		width: 80px !important;
+	}
+	.single_story_content_left.two .single_story_content_icon::before {
+		top: 38% !important;
+	}
+	.single_story_content_left {
+		margin-top: 145px !important;
+	}
+	.company_head {
+		height: 254px !important;
+	}
+	.company_tk {
+		top: 24% !important;
+	}
+	.company_title {
+		top: 45px !important;
+	}
+	.single_social_thumb_inner img {
+		width: 100%;
+	}
+	.single_social_button.active {
+		margin-bottom: 70px;
+	}
+	.thumb_img_border.right {
+		right: -33px !important;
+		left: 28px !important;
+	}
+	.contact_form_area {
+		padding: 79px 8px 120px 21px !important;
+	}
+	.single_team_thumb img {
+		width: 100%;
+	}
+	.team_area {
+		padding: 82px 0 1274px !important;
+	}
+	.section_title h2 {
+		font-size: 37px;
+	}
+	.team_area .row.team {
+		position: relative !important;
+		top: 0 !important;
+	}
+	.team_area {
+		padding: 91px 0 108px !important;
+	}
+	.testimonial_area {
+		padding: 94px 0 80px !important;
+	}
+	.single_testimonial {
+		margin-bottom: 30px;
+	}
+	.single_like_us_button {
+		margin-bottom: 30px;
+	}
+	.single_like_us_thumb img {
+		width: 100%;
+	}
+	.home2 .thumb_img_border {
+		right: -15px !important;
+		left: -5px !important;
+	}
+	.home2 .single_about_thumb::before {
+		height: 115px !important;
+		width: 519px !important;
+		left: 1px !important;
+	}
+	.single_counter_icon {
+		display: none;
+	}
+	.recent-post-item {
+		margin-bottom: 45px;
+	}
+	.sbi_photo_wrap {
+		margin: 8px !important;
+	}
+	.blog_reply {
+		margin-bottom: 50px;
+	}
+	.bharani-single-blog.admin {
+		margin-top: 40px;
+	}
+	.blog-page-datetime {
+		width: 23% !important;
+		padding: 17px 0 20px !important;
+	}
+	.left-sidebar .blog-page-title a {
+		font-size: 24px !important;
+	}
+	.bharani-blog-meta-left span {
+		margin-right: 17px !important;
+	}
+	.single_like_us_thumb {
+		margin-top: 0 !important;
+	}
+	.home2 .single_about_thumb {
+		margin-left: 0 !important;
+	}
+	.slider_text_inner h1 {
+		font-size: 40px;
+	}
+	.cd-headline.clip span b {
+		font-size: 40px !important;
+	}
+	.hidden-sm {
+		display: none !important;
+	}
+	.slider_content {
+		height: 740px !important;
+	}
+	.breatcome_area {
+		padding: 140px 0 140px !important;
+	}
+	.blog_dtl_content h2 {
+		font-size: 31px !important;
+	}
+	.single_portfolio:hover .single_portfolio_content {
+		top: 41% !important;
+	}
+	.single_portfolio.admin:hover .single_portfolio_content {
+		top: 30% !important;
+	}
+	.single_portfolio_thumb::before {
+		height: 80% !important;
+		width: 80% !important;
+		background: linear-gradient(to right, #03b8fa, #135ef3);
+	}
+	.contact_form_area::before {
+		top: 10px !important;
+	}
+	.thumb_img_border {
+		right: 28px !important;
+	}
+	.counter_area {
+		padding: 90px 0 70px !important;
+	}
+	.like_us_area {
+		padding: 89px 0 110px !important;
+	}
+	.single_social_content_inner {
+		margin-top: 0 !important;
+	}
+	.single_social {
+		margin-bottom: 30px !important;
+	}
+	.blog_area {
+		padding: 92px 0 78px !important;
+	}
+	.about_area.home2 {
+		padding: 55px 0 75px !important;
+	}
+	.blog_area.left-sidebar {
+		padding: 70px 0 80px !important;
+	}
+	.blog-details-area {
+		padding: 110px 0 110px !important;
+	}
+	.blog_area.left-sidebar.admin {
+		padding: 110px 0 80px !important;
+	}
+	.about_area {
+		padding: 80px 0 100px !important;
+	}
+	.slider_thumb_main {
+		display: none !important;
+	}
+}
+
+/* small mobile :320px. */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+	.slider_content_text_inner h1 {
+		font-size: 26px;
+	}
+	.slider_text_inner h1 {
+		font-size: 24px;
+	}
+	.single_like_us_thumb {
+		margin-top: 0 !important;
+	}
+	.slider_content_text_inner p {
+		width: 96% !important;
+	}
+	.single_about_content {
+		margin-left: 0 !important;
+	}
+	.single_about_content_inner_title h2 {
+		font-size: 32px;
+	}
+	.single_about_thumb_inner img {
+		width: 100%;
+	}
+	.single_softskill_section_inner {
+		margin-bottom: 40px;
+	}
+	.softskill_list .owl-nav {
+		margin-left: 0 !important;
+		top: 0 !important;
+		text-align: center;
+	}
+	.softskill_area {
+		padding: 90px 0 105px !important;
+	}
+	.single_portfolio_thumb img {
+		width: 100%;
+	}
+	.section_title h2 {
+		font-size: 30px;
+	}
+	.skill_area {
+		height: 960px !important;
+	}
+	.single_story_content_inner_text {
+		display: none;
+	}
+	.single_story_content_inner_title h4 {
+		font-size: 18px;
+	}
+	.single_story_content_icon {
+		display: none;
+	}
+	.breatcome_area {
+		padding: 140px 0 140px !important;
+	}
+	.single_story_content_left {
+		text-align: left !important;
+		margin-right: 0 !important;
+		margin-top: 0 !important;
+	}
+	.single_story_content_left.two {
+		padding-top: 0 !important;
+	}
+	.single_story_content_right.two {
+		margin-top: 0 !important;
+	}
+	.single_story_content_right {
+		margin-left: 0 !important;
+	}
+	.single_story_content_date span {
+		font-size: 14px !important;
+	}
+	.single_story_content_inner {
+		width: 50%;
+		float: left;
+	}
+	.single_story {
+		margin-bottom: 0 !important;
+	}
+	.single_story_content_inner_title {
+		margin-bottom: 30px;
+	}
+	.single_social_button.active {
+		margin-bottom: 70px;
+	}
+	.thumb_img_border.right {
+		right: -15px !important;
+		left: 31px !important;
+	}
+	.meta_box span {
+		margin-left: 18px !important;
+	}
+	.single_social_thumb_inner img {
+		width: 100%;
+	}
+	.thumb_img_border {
+		left: -15px !important;
+		right: 31px !important;
+	}
+	.thumb_img_border.right {
+		right: -15px !important;
+		left: 30px !important;
+	}
+	.contact_form_area {
+		padding: 79px 8px 120px 21px !important;
+	}
+	.single_footer_icon ul li a {
+		height: 42px !important;
+		width: 42px !important;
+		font-size: 20px !important;
+		line-height: 42px !important;
+	}
+	.single_footer_icon ul li {
+		margin: 0 5px !important;
+	}
+	.single_footer_content_text p {
+		font-size: 16px !important;
+	}
+	.team_area .row.team {
+		position: relative !important;
+		top: 0 !important;
+	}
+	.team_area {
+		padding: 92px 0 108px !important;
+	}
+	.testimonial_area {
+		padding: 94px 0 107px !important;
+	}
+	.single_like_us_button {
+		margin-bottom: 30px;
+	}
+	.single_like_us_thumb img {
+		width: 100%;
+	}
+	.single_like_us_content_title h2 {
+		font-size: 30px;
+	}
+	.single_testimonial_icon {
+		display: none;
+	}
+	.single_testimonial_content_title h4 {
+		margin-top: 10px !important;
+		font-size: 20px !important;
+	}
+	.home2 .thumb_img_border {
+		left: -7px !important;
+		right: -8px !important;
+	}
+	.home2 .single_about_thumb::before {
+		width: 295px !important;
+	}
+	.single_about_button {
+		float: none !important;
+	}
+	.single_counter_icon {
+		display: none;
+	}
+	.blog_dtl_content h2 {
+		font-size: 28px !important;
+	}
+	.bharani-blog-meta-left span {
+		margin-right: 16px !important;
+		font-size: 15px !important;
+	}
+	.textwidget {
+		padding: 0 0 315px !important;
+	}
+	.sbi_photo_wrap {
+		margin: 4px !important;
+	}
+	.recent-post-image {
+		margin-right: 8px !important;
+	}
+	.recent-post-text a {
+		font-size: 14px !important;
+	}
+	.recent-post-text span {
+		font-size: 14px;
+	}
+	.breatcome_title_inner h2 {
+		font-size: 30px;
+	}
+	.blog-page-datetime {
+		width: 48% !important;
+		padding: 17px 0 20px !important;
+	}
+	.blog-page-title h2 {
+		font-size: 21px !important;
+	}
+	.home2 .single_about_thumb {
+		margin-left: 0 !important;
+	}
+	.single_team_thumb img {
+		width: 100%;
+	}
+	.left-sidebar.blog2 .bharani-blog-meta-left span {
+		margin-right: 7px !important;
+		font-size: 15px !important;
+	}
+	.left-sidebar.blog2 .bharani-blog-meta-left i {
+		margin-right: 2px !important;
+	}
+	.slider_content {
+		height: 755px !important;
+	}
+	.hidden-sm {
+		display: none !important;
+	}
+	.slider_text_inner p {
+		width: 100% !important;
+	}
+	.home2 .slider_text_inner h1 {
+		font-size: 23px !important;
+	}
+	.single_portfolio:hover .single_portfolio_content {
+		top: 33% !important;
+	}
+	.single_portfolio.admin:hover .single_portfolio_content {
+		top: 16% !important;
+	}
+	.single_social_content_inner {
+		margin-top: 0 !important;
+	}
+	.single_portfolio_thumb::before {
+		height: 80% !important;
+		width: 80% !important;
+	}
+	.thumb_img_border {
+		display: none !important;
+	}
+	.single_social {
+		margin-bottom: 30px !important;
+	}
+	.contact_form_area::before {
+		top: 10px !important;
+	}
+	.home2 .single_about_thumb::before {
+		display: none !important;
+	}
+	.like_us_area {
+		padding: 90px 0 110px !important;
+	}
+	.blog_area {
+		padding: 92px 0 78px !important;
+	}
+	.counter_area {
+		padding: 90px 0 72px !important;
+	}
+	.section_title h4 {
+		font-size: 16px !important;
+	}
+	.about_area.home2 {
+		padding: 50px 0 70px !important;
+	}
+	.about_area.home2.about {
+		padding: 91px 0 80px !important;
+	}
+	.blog_area.left-sidebar {
+		padding: 110px 0 80px !important;
+	}
+	.blog-details-area {
+		padding: 110px 0 110px !important;
+	}
+	.about_area {
+		padding: 80px 0 70px !important;
+	}
+	.blog_area .section_title {
+		margin-bottom: 40px !important;
+	}
+	.bharani_nav_manu {
+		display: none;
+	}
+	.slider_thumb_main {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 600px) {
+  .ctn-preloader .animation-preloader .txt-loading {
+    font-size: 3em!important; /* Adjust font size for smaller screens */
+  }
+
+  .ctn-preloader p {
+    font-size: 12px!important; /* Adjust font size for smaller screens */
+    letter-spacing: 4px!important; /* Adjust letter spacing for smaller screens */
+  }
+}

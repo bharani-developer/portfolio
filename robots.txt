@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://bharani-dev.netlify.app/sitemap.xml
