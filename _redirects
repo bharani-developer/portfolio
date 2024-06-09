@@ -1,0 +1,5 @@
+# Redirect www to non-www
+www.bharani-dev.netlify.app/* https://bharani-dev.netlify.app/:splat 301!
+
+# Redirect non-www to www
+bharani-dev.netlify.app/* https://www.bharani-dev.netlify.app/:splat 301!
