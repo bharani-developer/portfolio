@@ -1,5 +1,14 @@
 add_header X-Content-Type-Options "nosniff";
 
+# Redirect www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.bharani-dev\.netlify\.app$ [NC]
+RewriteRule ^(.*)$ https://bharani-dev.netlify.app/$1 [R=301,L]
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^bharani-dev\.netlify\.app$ [NC]
+RewriteRule ^(.*)$ https://www.bharani-dev.netlify.app/$1 [R=301,L]
+
 # Set MIME types for specific file extensions
 <FilesMatch "\.(html|htm)$">
     AddType text/html .html
