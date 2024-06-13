@@ -12,8 +12,9 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'G-D3JSX9TFDM');
+    gtag('config', 'G-D3JSX9TFDM', { 'anonymize_ip': true }); // Anonymize IP
   </script>
+
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -27,21 +28,75 @@
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-K2XRNL6N');
   </script>
-  <!-- End Google Tag Manager -->
+  <script>
+    // Initialize Consent Mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
+
+    // Update consent state based on user preferences
+    function updateConsent(ad_consent, analytics_consent) {
+      gtag('consent', 'update', {
+        'ad_storage': ad_consent,
+        'analytics_storage': analytics_consent
+      });
+    }
+  </script>
+
+  <!-- Microsoft Clarity -->
   <script>
     (function (c, l, a, r, i, t, y) {
-      c[a] =
-        c[a] ||
-        function () {
-          (c[a].q = c[a].q || []).push(arguments);
-        };
+      c[a] = c[a] || function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
       t = l.createElement(r);
       t.async = 1;
       t.src = 'https://www.clarity.ms/tag/' + i;
       y = l.getElementsByTagName(r)[0];
       y.parentNode.insertBefore(t, y);
     })(window, document, 'clarity', 'script', 'mkeldofdtn');
+
+    // Mask sensitive data
+    clarity('set', 'mask', true);
   </script>
+
+  <!-- Cookiebot -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="YOUR_CCBID" type="text/javascript"
+    async></script>
+  <script>
+    // Load tracking scripts based on Cookiebot consent
+    function loadTrackingScripts() {
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      (function () {
+        var cb = function () {
+          if (CookieConsent && CookieConsent.consent.given) {
+            var granted = CookieConsent.consent.given.includes('statistics');
+            if (granted) {
+              // Load Google Analytics
+              var s = document.createElement('script');
+              s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D3JSX9TFDM';
+              s.async = true;
+              document.head.appendChild(s);
+              gtag('js', new Date());
+              gtag('config', 'G-D3JSX9TFDM', { 'anonymize_ip': true });
+            }
+          }
+        };
+        if (window.addEventListener) {
+          window.addEventListener('CookieConsentReady', cb);
+        } else {
+          window.attachEvent('onCookieConsentReady', cb);
+        }
+      })();
+    }
+
+    loadTrackingScripts();
+  </script>
+
   <!-- Schema.org JSON-LD Markup for Person -->
   <script type="application/ld+json">
   {
@@ -70,33 +125,32 @@
     }
   }
   </script>
-
   <!-- favicon -->
-<!-- Standard favicon -->
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/og-image/og-image-16.png">
-<link rel="icon" type="image/png" sizes="48x48" href="./assets/images/og-image/og-image-48.png">
+  <!-- Standard favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/og-image/og-image-16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/images/og-image/og-image-48.png">
 
-<!-- Apple Touch Icons -->
-<link rel="apple-touch-icon" sizes="64x64" href="./assets/images/og-image/og-image-64.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./assets/images/og-image/og-image-72.png">
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="64x64" href="./assets/images/og-image/og-image-64.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/og-image/og-image-72.png">
 
-<link rel="apple-touch-icon" sizes="144x144" href="./assets/images/og-image/og-image-144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./assets/images/og-image/og-image-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/og-image/og-image-180.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/og-image/og-image-144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/og-image/og-image-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/og-image/og-image-180.png">
 
-<!-- Android Chrome Icons -->
-<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/og-image/og-image-192.png"">
-<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/og-image/og-image-512.png"">
+  <!-- Android Chrome Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/og-image/og-image-192.png"">
+<link rel=" icon" type="image/png" sizes="512x512" href="./assets/images/og-image/og-image-512.png"">
 
 <!-- Microsoft Tiles -->
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-72.png"" sizes="72x72">
-<meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-144.png"" sizes="144x144">
-<meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-152.png"" sizes="152x152">
-<meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-256.png"" sizes="256x256">
+<meta name=" msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-72.png"" sizes=" 72x72">
+  <meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-144.png"" sizes=" 144x144">
+  <meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-152.png"" sizes=" 152x152">
+  <meta name="msapplication-TileImage" content="./assets/images/og-image/og-image-256.png"" sizes=" 256x256">
 
-<!-- Web App Manifest -->
-<link rel="manifest" href="./manifest.json">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="./manifest.json">
 
   <!-- Alternate link for different languages -->
   <link rel="alternate" href="https://bharani-dev.netlify.app" hreflang="en-in">
@@ -438,8 +492,9 @@
   <div class="content">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2XRNL6N" height="0" width="0"
-        class="gframe"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        style="display:none;visibility:hidden"></iframe></noscript>
+
+
 
     <!-- Cookie consent banner -->
     <div id="cookieConsent" class="cookie-consent">We use cookies to ensure you get the best experience on our website.
@@ -820,7 +875,7 @@
       </div>
     </div>
   </section>
-   <!-- End bharani Service Area -->
+  <!-- End bharani Service Area -->
 
   <!-- Start bharani Portfolio Area -->
   <section id="portfolio">
@@ -2031,7 +2086,7 @@
     </div>
   </footer>
   <!-- End  Footer Area -->
-   
+
   </div>
 
   <!-- jQuery -->
